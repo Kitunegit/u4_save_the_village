@@ -1,0 +1,50 @@
+Hard
+・Wave 1
+
+Pillager 5
+Vindicator 4
+Witch 1
+Total 10
+
+・Wave2
+Pillager 6
+Vindicator 5
+Witch 3
+Raveger 1
+Total 15
+
+・Wave3
+Pillager 10
+Vindicator 8
+Witch 3
+Raveger 2
+Evoker 3
+Total 27
+
+・Wave4
+Pillager 8
+Vindicator 8
+Witch 3
+Raveger 3
+Evoker 1
+Blaze 1
+Total 25
+
+・Wave5
+Pillager 8
+Vindicator 8
+Witch 5
+Raveger 2
+Raveger(Pillager) 1
+Evoker 4
+Illusioner 2
+Total 31
+
+・Wave6
+Pillager 10
+Vindicator 8
+Witch 5
+Raveger 2
+Raveger(Pillager) 1
+Evoker 4
+Total 31

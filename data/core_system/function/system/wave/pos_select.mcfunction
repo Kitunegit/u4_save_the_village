@@ -4,6 +4,7 @@
  execute store result score $Random STV.System.Wave.Pos run random value 1..8
 
 # 生成された値に応じて場所を選択
+ kill @e[type=marker,tag=STV.System.Wave.SummonPos]
  execute if score $Random STV.System.Wave.Pos matches 1 run summon marker 130.5 64 -57.5 {Tags:[STV.System.Wave.SummonPos]}
  execute if score $Random STV.System.Wave.Pos matches 2 run summon marker -57.5 72 -74.5 {Tags:[STV.System.Wave.SummonPos]}
  execute if score $Random STV.System.Wave.Pos matches 3 run summon marker -55.5 63 32.5 {Tags:[STV.System.Wave.SummonPos]}

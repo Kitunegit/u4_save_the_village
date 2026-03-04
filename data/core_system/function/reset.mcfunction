@@ -11,3 +11,4 @@ tag @a remove Have.Job
  scoreboard objectives remove STV.GamePhase
  scoreboard objectives remove STV.BossBar
  scoreboard objectives remove STV.Wave
+ kill @e[type=marker,tag=STV.System.Wave.SummonPos]

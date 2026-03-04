@@ -18,8 +18,8 @@
     # プレイヤーを飛ばす
      execute as @a run spreadplayers 21 -27 0.5 5 under 64 true @s
     # プレイヤー演出
-     schedule function core_system:text/difficuluty 3s
+     schedule function core_system:text/difficuluty 2s
      schedule function core_system:text/hard 4.5s
     # 襲撃開始
     schedule function core_system:system/game_start 15s
-    
+    tag Kitune_sh add Diff.VeryHard

@@ -3,8 +3,12 @@
  bossbar set stv:game_bar max 300
  bossbar set stv:game_bar value 0
  bossbar set stv:game_bar style notched_20
- scoreboard objectives add STV.GameTick dummy
-
+ scoreboard objectives add STV.GamePhase dummy
+ scoreboard players set $GameStatus STV.GamePhase 0
+ scoreboard objectives add STV.BossBar dummy
+ scoreboard players set $Time STV.BossBar 0
+ scoreboard objectives add STV.Wave dummy
+ scoreboard players set $Wave STV.Wave 0
 # プレイヤー処理
 
     # 役職につかせる
@@ -16,3 +20,6 @@
     # プレイヤー演出
      schedule function core_system:text/difficuluty 3s
      schedule function core_system:text/hard 4.5s
+    # 襲撃開始
+    schedule function core_system:system/game_start 15s
+    

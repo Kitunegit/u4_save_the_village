@@ -1,4 +1,4 @@
-execute at @e[type=marker,tag=STV.System.Wave.SummonPos] run summon pillager ~1 ~ ~ {equipment:{mainhand:{id:"minecraft:crossbow",count:1}},DeathLootTable:"core_system:normal_drop"}
-execute at @e[type=marker,tag=STV.System.Wave.SummonPos] run summon pillager ~-1 ~ ~ {equipment:{mainhand:{id:"minecraft:crossbow",count:1}},DeathLootTable:"core_system:normal_drop"}
-execute at @e[type=marker,tag=STV.System.Wave.SummonPos] run summon witch ~ ~ ~ {DeathLootTable:"core_system:normal_drop"}
-execute at @e[type=marker,tag=STV.System.Wave.SummonPos] run summon evoker ~-2 ~ ~ {DeathLootTable:"core_system:rare_drop"}
+execute at @e[type=marker,tag=STV.System.Wave.SummonPos] run summon pillager ~1 ~ ~ {equipment:{mainhand:{id:"minecraft:crossbow",count:1}},DeathLootTable:"core_system:normal_drop",PersistenceRequired:true}
+execute at @e[type=marker,tag=STV.System.Wave.SummonPos] run summon pillager ~-1 ~ ~ {equipment:{mainhand:{id:"minecraft:crossbow",count:1}},DeathLootTable:"core_system:normal_drop",PersistenceRequired:true}
+execute at @e[type=marker,tag=STV.System.Wave.SummonPos] run summon witch ~ ~ ~ {DeathLootTable:"core_system:normal_drop",PersistenceRequired:true}
+execute at @e[type=marker,tag=STV.System.Wave.SummonPos] run summon evoker ~-2 ~ ~ {DeathLootTable:"core_system:rare_drop",PersistenceRequired:true}

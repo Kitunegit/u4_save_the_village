@@ -2,7 +2,7 @@
  function core_system:system/wave/pos_select
 # 召喚する
  scoreboard players add $Wave STV.Wave 1
- bossbar set stv:game_bar max 500
+ bossbar set stv:game_bar max 750
  execute if score $Wave STV.Wave matches 1 run function core_system:system/wave/summon/wave_1/summon
  execute if score $Wave STV.Wave matches 2 run function core_system:system/wave/summon/wave_2/summon
  execute if score $Wave STV.Wave matches 3.. run function core_system:system/wave/summon/wave_3/summon

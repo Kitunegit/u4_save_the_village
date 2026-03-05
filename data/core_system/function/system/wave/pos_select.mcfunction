@@ -13,3 +13,4 @@
  execute if score $Random STV.System.Wave.Pos matches 6 run summon marker 57.5 64 -87.5 {Tags:[STV.System.Wave.SummonPos]}
  execute if score $Random STV.System.Wave.Pos matches 7 run summon marker 9.5 63 20.5 {Tags:[STV.System.Wave.SummonPos]}
  execute if score $Random STV.System.Wave.Pos matches 8 run summon marker -72.5 63 -22.5 {Tags:[STV.System.Wave.SummonPos]}
+ execute as @e[type=marker,tag=STV.System.Wave.SummonPos] run say MarkerDetect!

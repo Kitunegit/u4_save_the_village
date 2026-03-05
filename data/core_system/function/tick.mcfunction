@@ -9,6 +9,6 @@
  execute as @a[tag=Job.Chemist] run function core_system:item/chemist
 # ファングのエンティティ処理
  execute as @e[tag=Fang] at @s run function core_system:entity/fang
- execute at @e[type=illusioner] run particle crit ~ ~ ~ 0.2 0.2 0.2 0 10
+ execute at @e[type=illusioner] run particle crit ~ ~ ~ 0.2 0.2 0.2 0 5
 # Game実行
  execute if score $GameStatus STV.GamePhase matches 1.. run function core_system:system/tick

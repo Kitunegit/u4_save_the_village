@@ -2,7 +2,9 @@
  bossbar add stv:game_bar "ボスバー"
  bossbar set stv:game_bar max 300
  bossbar set stv:game_bar value 0
- bossbar set stv:game_bar style notched_20
+ bossbar set stv:game_bar style notched_10
+ bossbar set stv:game_bar color red
+ bossbar set stv:game_bar name "襲撃"
  scoreboard objectives add STV.GamePhase dummy
  scoreboard players set $GameStatus STV.GamePhase 0
  scoreboard objectives add STV.BossBar dummy

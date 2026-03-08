@@ -8,7 +8,7 @@
 
 # リセット
  scoreboard players set $Time STV.BossBar 0 
- bossbar set stv:game_bar max 300
+ bossbar set stv:game_bar max 500
 
 # 演出
  title @a title {"text":"ウェーブクリア!"}

@@ -3,4 +3,7 @@
  execute store result bossbar stv:game_bar value run scoreboard players get $Time STV.BossBar
 
 # マックスの時に処理転換
- execute if score $Time STV.BossBar matches 301.. run function core_system:system/phase/2/next
+ execute if score $Time STV.BossBar matches 501.. run function core_system:system/phase/2/next
+
+ execute as @a if score @s STV.Trigger.BaseStats matches 1 run function core_system:system/shop/common/base
+ 

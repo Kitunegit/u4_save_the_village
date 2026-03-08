@@ -12,3 +12,17 @@ tag @s remove Job.Sword
 tag @s remove Job.Trident
 tag @s remove Job.Chemist
 tag @s remove Job.Warrior
+
+scoreboard players set @s STV.Utility.Base.Stack 0
+scoreboard players set @s STV.Utility.Potion.Stack 0
+
+attribute @s attack_damage modifier remove stv:base_1
+attribute @s attack_damage modifier remove stv:base_2
+attribute @s attack_damage modifier remove stv:base_3
+attribute @s attack_damage modifier remove stv:base_4
+attribute @s attack_damage modifier remove stv:base_5
+attribute @s attack_damage modifier remove stv:base_6
+attribute @s attack_damage modifier remove stv:base_7
+attribute @s attack_damage modifier remove stv:base_8
+attribute @s attack_damage modifier remove stv:base_9
+attribute @s attack_damage modifier remove stv:base_10

@@ -13,3 +13,6 @@
 # 演出
  title @a title {"text":"ウェーブクリア!"}
  execute as @a at @s run playsound minecraft:entity.player.levelup player @s ~ ~ ~ 1 0.75
+
+# しょっぷ
+ execute as @a run function core_system:system/shop/open

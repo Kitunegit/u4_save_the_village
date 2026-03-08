@@ -12,3 +12,7 @@ tag @a remove Have.Job
  scoreboard objectives remove STV.BossBar
  scoreboard objectives remove STV.Wave
  kill @e[type=marker,tag=STV.System.Wave.SummonPos]
+
+ scoreboard objectives remove STV.Utility.Base.Stack
+ scoreboard objectives remove STV.Utility.Emerald_Count
+ scoreboard objectives remove STV.Utility.Potion.Stack

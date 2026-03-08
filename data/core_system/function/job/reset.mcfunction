@@ -26,3 +26,26 @@ attribute @s attack_damage modifier remove stv:base_7
 attribute @s attack_damage modifier remove stv:base_8
 attribute @s attack_damage modifier remove stv:base_9
 attribute @s attack_damage modifier remove stv:base_10
+
+attribute @s movement_speed modifier remove stv:base_1
+attribute @s movement_speed modifier remove stv:base_2
+attribute @s movement_speed modifier remove stv:base_3
+attribute @s movement_speed modifier remove stv:base_4
+attribute @s movement_speed modifier remove stv:base_5
+attribute @s movement_speed modifier remove stv:base_6
+attribute @s movement_speed modifier remove stv:base_7
+attribute @s movement_speed modifier remove stv:base_8
+attribute @s movement_speed modifier remove stv:base_9
+attribute @s movement_speed modifier remove stv:base_10
+
+attribute @s max_health modifier remove stv:base_1
+attribute @s max_health modifier remove stv:base_2
+attribute @s max_health modifier remove stv:base_3
+attribute @s max_health modifier remove stv:base_4
+attribute @s max_health modifier remove stv:base_5
+attribute @s max_health modifier remove stv:base_6
+attribute @s max_health modifier remove stv:base_7
+attribute @s max_health modifier remove stv:base_8
+attribute @s max_health modifier remove stv:base_9
+attribute @s max_health modifier remove stv:base_10
+tag @s remove Has.Potion

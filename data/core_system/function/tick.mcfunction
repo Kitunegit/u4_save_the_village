@@ -12,3 +12,6 @@
  execute at @e[type=illusioner] run particle crit ~ ~ ~ 0.2 0.2 0.2 0 5
 # Game実行
  execute if score $GameStatus STV.GamePhase matches 1.. run function core_system:system/tick
+
+# 矢をコロス
+ kill @e[type=arrow,nbt={inGround:1b}]

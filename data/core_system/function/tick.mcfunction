@@ -15,3 +15,12 @@
 
 # 矢をコロス
  kill @e[type=arrow,nbt={inGround:1b}]
+
+
+ # ウルト処理
+  execute as @e[type=marker,tag=STV.Chemist.Ult] run function core_system:item/ult/chemist/tick
+  execute as @e[type=item_display,tag=STV.Ult.Trident] run function core_system:item/ult/trident/tick
+
+# ウルト検知
+ execute as @a[tag=Job.Chemist] if score @s STV.Ult.Chemist.Detect matches 1 run function core_system:item/ult/chemist/start
+ execute as @a[tag=Job.Trident] if score @s STV.Ult.Trident.Detect matches 1.. run function core_system:item/ult/trident/start

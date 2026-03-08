@@ -7,9 +7,9 @@
  execute if score @s STV.Utility.Base.Stack matches 16.. run return 0
 # 所持エメラルド取得
  execute store result score @s STV.Utility.Emerald_Count run clear @s emerald 0
- execute if score @s STV.Utility.Emerald_Count matches ..10 run tellraw @s {"text":"エメラルドが不足しています。"}
- execute if score @s STV.Utility.Emerald_Count matches ..10 at @s run playsound minecraft:entity.villager.no player @s ~ ~ ~ 1 1
- execute if score @s STV.Utility.Emerald_Count matches ..10 run return 0
+ execute if score @s STV.Utility.Emerald_Count matches ..9 run tellraw @s {"text":"エメラルドが不足しています。"}
+ execute if score @s STV.Utility.Emerald_Count matches ..9 at @s run playsound minecraft:entity.villager.no player @s ~ ~ ~ 1 1
+ execute if score @s STV.Utility.Emerald_Count matches ..9 run return 0
 
 # 購入処理
  clear @s emerald 10

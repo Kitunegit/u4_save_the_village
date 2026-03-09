@@ -12,6 +12,8 @@
 
 # 演出
  title @a title {"text":"ウェーブクリア!"}
+ tellraw @a {"text":"クリアボーナス! +20エメラルド"}
+ give @a emerald 20
  execute as @a at @s run playsound minecraft:entity.player.levelup player @s ~ ~ ~ 1 0.75
 
 # しょっぷ

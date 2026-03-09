@@ -16,3 +16,5 @@ tag @a remove Have.Job
  scoreboard objectives remove STV.Utility.Base.Stack
  scoreboard objectives remove STV.Utility.Emerald_Count
  scoreboard objectives remove STV.Utility.Potion.Stack
+
+ kill @e[type=item]

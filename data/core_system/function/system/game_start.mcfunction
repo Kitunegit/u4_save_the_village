@@ -4,8 +4,3 @@
 
 # ボスバーを全員に表示する
  bossbar set stv:game_bar players @a
-
-
-
-
- #次: ウェーブクリア判定 終了処理?

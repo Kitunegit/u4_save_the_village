@@ -18,3 +18,6 @@
 
 # しょっぷ
  execute as @a run function core_system:system/shop/open
+
+ execute as @r[tag=Death] run function core_system:system/revive
+ execute as @r[tag=Death] run function core_system:system/revive

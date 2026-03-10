@@ -17,7 +17,7 @@ execute as @e[tag=!Power,tag=Hum.Power] if predicate core_system:30 at @s run su
 execute as @e[tag=!Power,type=evoker_fangs] at @s if predicate core_system:30 run summon marker ~ ~ ~ {Tags:["Fang"]}
 
  execute if score $Wave STV.Wave matches 5..8 as @e[type=#core_system:power_raid,tag=!Power] run attribute @s max_health base set 65
- execute if score $Wave STV.Wave matches 8..12 as @e[type=#core_system:power_raid,tag=!Power] run attribute @s max_health base set 125
+ execute if score $Wave STV.Wave matches 8..12 as @e[type=#core_system:power_raid,tag=!Power] run attribute @s max_health base set 120
  execute if score $Wave STV.Wave matches 5..8 as @e[type=ravager,tag=!Power] run attribute @s max_health base set 175
  execute if score $Wave STV.Wave matches 8..12 as @e[type=ravager,tag=!Power] run attribute @s max_health base set 340
  execute as @e[type=#core_system:power_raid,tag=!Power] run effect give @s instant_health 1 40 true

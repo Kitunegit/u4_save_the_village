@@ -25,7 +25,8 @@
      execute as @a run spreadplayers 21 -27 0.5 5 under 64 true @s
     # プレイヤー演出
      schedule function core_system:text/difficuluty 1s
-     schedule function core_system:text/very_hard 2.5s
+     schedule function core_system:text/infinity 2.5s
     # 襲撃開始
     schedule function core_system:system/game_start 5s
     tag Kitune_sh add Diff.VeryHard
+    tag Kitune_sh add Diff.Infinity

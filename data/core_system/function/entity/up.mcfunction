@@ -1,7 +1,7 @@
 # 強化
 execute as @e[type=#core_system:power_raid,tag=!Power] if predicate core_system:30 run tag @s add Hum.Power
 execute as @e[type=ravager,tag=!Power] if predicate core_system:70 run tag @s add Rav.Power
-
+effect give @e[type=slime,tag=!Power] infested infinite 0 true
 # 更なる強化
  execute if data entity Kitune_sh {Tags:['Diff.VeryHard']} run function core_system:entity/very
 
@@ -25,3 +25,4 @@ execute as @e[tag=!Power,type=evoker_fangs] at @s if predicate core_system:30 ru
 
 tag @e[tag=!Power,type=#core_system:raid] add Power
 tag @e[tag=!Power,type=evoker_fangs] add Power
+tag @e[tag=!Power,type=slime] add Power

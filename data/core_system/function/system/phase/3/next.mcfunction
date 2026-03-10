@@ -12,12 +12,12 @@
 
 # 演出
  title @a title {"text":"ウェーブクリア!"}
- execute if score $Wave STV.Wave matches ..5 run tellraw @a {"text":"クリアボーナス! +20エメラルド"}
- execute if score $Wave STV.Wave matches ..5 run give @a emerald 20
- execute if score $Wave STV.Wave matches 8..12 run tellraw @a {"text":"クリアボーナス! +40エメラルド"}
- execute if score $Wave STV.Wave matches 8..12 run give @a emerald 40
- execute if score $Wave STV.Wave matches 12.. run tellraw @a {"text":"クリアボーナス! +50エメラルド"}
- execute if score $Wave STV.Wave matches 12.. run give @a emerald 50
+ execute if score $Wave STV.Wave matches ..5 run tellraw @a {"text":"クリアボーナス! +40エメラルド"}
+ execute if score $Wave STV.Wave matches ..5 run give @a emerald 40
+ execute if score $Wave STV.Wave matches 5..12 run tellraw @a {"text":"クリアボーナス! +50エメラルド"}
+ execute if score $Wave STV.Wave matches 5..12 run give @a emerald 50
+ execute if score $Wave STV.Wave matches 13.. run tellraw @a {"text":"クリアボーナス! +120エメラルド"}
+ execute if score $Wave STV.Wave matches 13.. run give @a emerald 120
  execute as @a at @s run playsound minecraft:entity.player.levelup player @s ~ ~ ~ 1 0.75
  
  schedule clear core_system:system/wave/summon/wave_9/re_summon

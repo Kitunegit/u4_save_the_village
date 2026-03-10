@@ -1,6 +1,6 @@
 scoreboard players set @s STV.Ult.Archer.Detect 0
 tag @s add STV.Ult.Archer
-scoreboard players set @s STV.Ult.Archer.Tick 200
+scoreboard players set @s STV.Ult.Archer.Tick 100
 execute at @s run playsound minecraft:item.trident.thunder player @a ~ ~ ~ 1 2
 clear @s bow
 title @s title ""

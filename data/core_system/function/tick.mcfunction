@@ -16,7 +16,10 @@
 # 矢をコロス
  kill @e[type=arrow,nbt={inGround:1b}]
 
-
+# アイテムTick処理
+ execute as @e[type=marker,tag=Item.Chemist.Buff.Pot] at @s run function core_system:item/chemist/potion/heal_tick
+ execute as @e[type=marker,tag=Item.Chemist.DeBuff.Pot] at @s run function core_system:item/chemist/potion/poison_tick
+ function core_system:item/chemist/potion/detect/tick
  # ウルト処理
   execute as @e[type=marker,tag=STV.Chemist.Ult] run function core_system:item/ult/chemist/tick
   execute as @e[type=item_display,tag=STV.Ult.Trident] run function core_system:item/ult/trident/tick

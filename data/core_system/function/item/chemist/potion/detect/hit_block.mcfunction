@@ -1,0 +1,2 @@
+execute if entity @s[tag=splash_potion.Heal] at @s run function core_system:item/chemist/potion/heal
+execute if entity @s[tag=splash_potion.Poison] at @s run function core_system:item/chemist/potion/poison

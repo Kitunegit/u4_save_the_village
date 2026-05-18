@@ -14,3 +14,6 @@ attribute @s minecraft:entity_interaction_range base set 2
 
 tag @s add Have.Job
 tag @s add Job.Warrior
+
+#　ウルトに必要なエネルギーをセット
+scoreboard players set @s STV.Common.Ult.MaxEnergy 100

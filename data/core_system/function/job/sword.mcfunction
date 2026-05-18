@@ -12,3 +12,6 @@ attribute @s max_health base set 30
 
 tag @s add Have.Job
 tag @s add Job.Sword
+
+# ウルトに必要なエネルギーをセット
+scoreboard players set @s STV.Common.Ult.MaxEnergy 100

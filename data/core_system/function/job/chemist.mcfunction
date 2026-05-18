@@ -11,3 +11,6 @@ attribute @s max_health base set 15
 
 tag @s add Have.Job
 tag @s add Job.Chemist
+
+# ウルトに必要なエネルギーをセット
+scoreboard players set @s STV.Common.Ult.MaxEnergy 150

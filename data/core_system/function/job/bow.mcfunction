@@ -8,3 +8,5 @@ item replace entity @s hotbar.8 with cooked_beef 64
 item replace entity @s inventory.26 with arrow
 tag @s add Have.Job
 tag @s add Job.Archer
+
+scoreboard players set @s STV.Common.Ult.MaxEnergy 150

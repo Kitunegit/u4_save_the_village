@@ -26,6 +26,7 @@
   execute as @a[tag=STV.Ult.Archer] run function core_system:item/ult/archer/tick
   execute as @e[type=marker,tag=STV.Sword.Ult] run function core_system:item/ult/sword/tick
   execute as @e[type=marker,tag=STV.Warrior.Ult] run function core_system:item/ult/warrior/tick
+  execute as @a[tag=STV.Ult.Have] run function core_system:item/ult/ui/tick
 
 # ウルト検知
  execute as @a[tag=Job.Chemist] if score @s STV.Ult.Chemist.Detect matches 1 run function core_system:item/ult/chemist/start

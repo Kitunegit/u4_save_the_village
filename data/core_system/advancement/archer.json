@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "jouken": {
+      "trigger": "minecraft:killed_by_arrow",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:['Job.Archer']}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "core_system:item/ult/archer/charge_kill"
+  }
+}

@@ -34,3 +34,5 @@
  execute as @a[tag=Job.Archer] if score @s STV.Ult.Archer.Detect matches 1 run function core_system:item/ult/archer/start
  execute as @a[tag=Job.Sword] if score @s STV.Ult.Sword.Detect matches 1 run function core_system:item/ult/sword/start
  execute as @a[tag=Job.Warrior] if score @s STV.Ult.Warrior.Detect matches 1 run function core_system:item/ult/warrior/start
+# 弓兵のウルト増加検知
+ execute as @a[tag=Job.Archer] if score @s STV.Archer.Shot matches 1.. run function core_system:item/ult/archer/charge

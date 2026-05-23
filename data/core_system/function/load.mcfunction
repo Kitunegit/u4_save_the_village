@@ -11,6 +11,7 @@ scoreboard objectives add STV.Ult.Trident.Detect minecraft.used:minecraft.angler
 scoreboard objectives add STV.Ult.Archer.Detect minecraft.used:minecraft.archer_pottery_sherd
 scoreboard objectives add STV.Ult.Archer.Shot minecraft.used:minecraft.crossbow
 scoreboard objectives add STV.Ult.Archer.Tick dummy
+scoreboard objectives add STV.Archer.Shot minecraft.used:minecraft.bow
 
 scoreboard objectives add STV.Ult.Sword.Tick dummy
 scoreboard objectives add STV.Ult.Sword.Detect minecraft.used:minecraft.blade_pottery_sherd

@@ -16,7 +16,7 @@ tag @s remove Job.Warrior
 scoreboard players set @s STV.Utility.Base.Stack 0
 scoreboard players set @s STV.Utility.Potion.Stack 0
 scoreboard players set @s STV.Common.Ult.Energy 0
-scoreboard players set @s STV.Common.Ult.Energy 100
+scoreboard players set @s STV.Common.Ult.MaxEnergy 100
 
 attribute @s attack_damage modifier remove stv:base_1
 attribute @s attack_damage modifier remove stv:base_2

@@ -36,3 +36,7 @@
  execute as @a[tag=Job.Warrior] if score @s STV.Ult.Warrior.Detect matches 1 run function core_system:item/ult/warrior/start
 # 弓兵のウルト増加検知
  execute as @a[tag=Job.Archer] if score @s STV.Archer.Shot matches 1.. run function core_system:item/ult/archer/charge
+
+# 槍術師のウルトチャージ
+ execute as @a[tag=Job.Trident] at @s if block ~ ~-1 ~ air run scoreboard players add @s STV.Common.Ult.Energy 1
+ execute as @a[tag=Job.Trident,nbt={active_effects:[{id:"minecraft:slow_falling"}]}] at @s if block ~ ~-1 ~ air run scoreboard players add @s STV.Common.Ult.Energy 4

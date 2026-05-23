@@ -17,4 +17,4 @@ tag @s add Have.Job
 tag @s add Job.Trident
 
 # ウルトに必要なエネルギーをセット
-scoreboard players set @s STV.Common.Ult.MaxEnergy 5000
+scoreboard players set @s STV.Common.Ult.MaxEnergy 1000

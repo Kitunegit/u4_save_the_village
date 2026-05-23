@@ -50,4 +50,15 @@ attribute @s max_health modifier remove stv:base_7
 attribute @s max_health modifier remove stv:base_8
 attribute @s max_health modifier remove stv:base_9
 attribute @s max_health modifier remove stv:base_10
+
+attribute @s knockback_resistance modifier remove stv:base_1
+attribute @s knockback_resistance modifier remove stv:base_2
+attribute @s knockback_resistance modifier remove stv:base_3
+attribute @s knockback_resistance modifier remove stv:base_4
+attribute @s knockback_resistance modifier remove stv:base_5
+attribute @s knockback_resistance modifier remove stv:base_6
+attribute @s knockback_resistance modifier remove stv:base_7
+attribute @s knockback_resistance modifier remove stv:base_8
+attribute @s knockback_resistance modifier remove stv:base_9
+attribute @s knockback_resistance modifier remove stv:base_10
 tag @s remove Has.Potion

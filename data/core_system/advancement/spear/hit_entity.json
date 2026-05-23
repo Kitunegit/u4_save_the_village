@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "jouken": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:['Job.Spear']}",
+          "effects": {
+            "minecraft:speed": {}
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "core_system:item/ult/spear/charge_hit"
+  }
+}

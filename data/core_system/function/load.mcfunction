@@ -19,6 +19,9 @@ scoreboard objectives add STV.Ult.Sword.Detect minecraft.used:minecraft.blade_po
 scoreboard objectives add STV.Ult.Warrior.Tick dummy
 scoreboard objectives add STV.Ult.Warrior.Detect minecraft.used:minecraft.scrape_pottery_sherd
 
+scoreboard objectives add STV.Ult.Spear.Tick dummy
+scoreboard objectives add STV.Ult.Spear.Detect minecraft.used:minecraft.flow_pottery_sherd
+
 # 役職共通のウルトのエネルギー
 scoreboard objectives add STV.Common.Ult.Energy dummy
 

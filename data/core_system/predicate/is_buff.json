@@ -3,8 +3,7 @@
   "entity": "this",
   "predicate": {
     "effects": {
-      "minecraft:resistance": {},
-      "minecraft:regeneration": {}
+      "minecraft:glowing": {}
     }
   }
 }

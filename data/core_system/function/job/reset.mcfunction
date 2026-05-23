@@ -12,6 +12,7 @@ tag @s remove Job.Sword
 tag @s remove Job.Trident
 tag @s remove Job.Chemist
 tag @s remove Job.Warrior
+tag @s remove Job.Spear
 
 scoreboard players set @s STV.Utility.Base.Stack 0
 scoreboard players set @s STV.Utility.Potion.Stack 0

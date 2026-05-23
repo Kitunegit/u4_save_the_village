@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "jouken": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:['Job.Warrior']}",
+          "effects": {
+            "minecraft:strength": {}
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "core_system:item/ult/warrior/charge_attack"
+  }
+}

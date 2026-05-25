@@ -4,7 +4,6 @@
 
 
  # 演出
- execute at @s run particle crit ~ ~ ~ 0 1 0 0.1 0 normal
  execute at @s run tp @s ~ ~ ~ ~15 ~
  execute at @s positioned ^ ^ ^2.5 run particle dust{color:[0.46,0.2,0.4],scale:2} ~ ~0.5 ~ 0.1 0.1 0.1 0 1
  execute at @s positioned ^ ^ ^-2.5 run particle dust{color:[0.46,0.2,0.4],scale:2} ~ ~0.5 ~ 0.1 0.1 0.1 0 1

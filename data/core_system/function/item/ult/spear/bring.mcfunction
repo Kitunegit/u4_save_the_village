@@ -6,6 +6,8 @@
  scoreboard players set $strength player_motion.api.launch 75000
  execute at @s rotated ~ 0 run function player_motion:api/launch_looking
 
- scoreboard players reset @s STV.Ult.Spear.Tick
  execute at @s run playsound minecraft:entity.breeze.shoot player @a ~ ~ ~ 4 1.75
  attribute @s jump_strength base set 0.42
+
+ execute if score @s STV.Ult.Spear.Tick matches 70 run scoreboard players reset @s STV.Ult.Spear.Tick
+ execute if score @s STV.Ult.Spear.Tick matches ..69 run function core_system:item/ult/spear/restart

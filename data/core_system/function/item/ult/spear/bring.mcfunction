@@ -9,5 +9,5 @@
  execute at @s run playsound minecraft:entity.breeze.shoot player @a ~ ~ ~ 4 1.75
  attribute @s jump_strength base set 0.42
 
- execute if score @s STV.Ult.Spear.Tick matches 70 run scoreboard players reset @s STV.Ult.Spear.Tick
- execute if score @s STV.Ult.Spear.Tick matches ..69 run function core_system:item/ult/spear/restart
+ execute if score @s STV.Ult.Spear.Tick matches 50.. run scoreboard players reset @s STV.Ult.Spear.Tick
+ execute if score @s STV.Ult.Spear.Tick matches ..49 run function core_system:item/ult/spear/restart

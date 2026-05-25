@@ -4,7 +4,7 @@
 
  # バフ付与
  execute as @e[distance=..2.5,type=#core_system:raid] run tag @s add Item.Chemist.Potion.Buff.Poison_01.Temporary
- execute as @e[tag=Item.Chemist.Potion.Buff.Poison_01.Temporary] unless predicate core_system:is_debuff run scoreboard players add @p[tag=Job.Chemist] STV.Common.Ult.Energy 10
+ execute as @e[tag=Item.Chemist.Potion.Buff.Poison_01.Temporary] unless predicate core_system:is_debuff run scoreboard players add @p[tag=Job.Chemist] STV.Common.Ult.Energy 5
  effect give @e[tag=Item.Chemist.Potion.Buff.Poison_01.Temporary] poison 20 3 true
  effect give @e[tag=Item.Chemist.Potion.Buff.Poison_01.Temporary] slowness 20 4 true
  effect give @e[tag=Item.Chemist.Potion.Buff.Poison_01.Temporary] weakness 20 2 true

@@ -4,7 +4,7 @@
 
  # バフ付与
  execute as @e[distance=..2.5,type=player] run tag @s add Item.Chemist.Potion.Buff.Heal_01.Temporary
- execute as @e[tag=Item.Chemist.Potion.Buff.Heal_01.Temporary] unless predicate core_system:is_buff run scoreboard players add @p[tag=Job.Chemist] STV.Common.Ult.Energy 15
+ execute as @e[tag=Item.Chemist.Potion.Buff.Heal_01.Temporary] unless predicate core_system:is_buff run scoreboard players add @p[tag=Job.Chemist] STV.Common.Ult.Energy 5
  effect give @e[tag=Item.Chemist.Potion.Buff.Heal_01.Temporary] regeneration 30 1 true
  effect give @e[tag=Item.Chemist.Potion.Buff.Heal_01.Temporary] resistance 30 1 true
  effect give @e[tag=Item.Chemist.Potion.Buff.Heal_01.Temporary] absorption 50 2 true

@@ -1,7 +1,7 @@
 #
 # 突撃兵 処理
 #
-
+ execute at @s run tp @s ~ ~0.5 ~
  execute at @s run particle minecraft:cloud ~ ~ ~ 2 0.5 2 0.5 100
  scoreboard players set $strength player_motion.api.launch 75000
  execute at @s rotated ~ 0 run function player_motion:api/launch_looking

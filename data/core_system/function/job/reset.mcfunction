@@ -14,6 +14,10 @@ tag @s remove Job.Chemist
 tag @s remove Job.Warrior
 tag @s remove Job.Spear
 
+tag @s remove Job.Wizard.Fire
+tag @s remove Job.Wizard.Soul
+tag @s remove Job.Wizard.Poison
+
 scoreboard players set @s STV.Utility.Base.Stack 0
 scoreboard players set @s STV.Utility.Potion.Stack 0
 scoreboard players set @s STV.Common.Ult.Energy 0

@@ -1,0 +1,12 @@
+
+# エフェクト
+ execute at @s run particle minecraft:copper_fire_flame ~ ~ ~ 0.4 0.4 0.4 0.03 1 normal
+ execute at @s run particle dust{color:[0.13,0.73,0.17],scale:2.0} ~ ~ ~ 0.1 0.1 0.1 0.03 1 normal
+
+ # 飛ばす
+  execute at @s if block ^ ^ ^1 air run tp @s ^ ^ ^1
+  execute unless block ^ ^ ^1 air run kill @s
+ 
+ # ダメージ
+  execute at @s positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#core_system:raid,dx=0,dy=0,dz=0] run damage @s 3 magic by @p[tag=Job.Wizard]
+  execute at @s positioned ~-0.5 ~-0.5 ~-0.5 run effect give @e[type=#core_system:raid,dx=0,dy=0,dz=0] poison 5 5 true

@@ -22,6 +22,9 @@ scoreboard objectives add STV.Ult.Warrior.Detect minecraft.used:minecraft.scrape
 scoreboard objectives add STV.Ult.Spear.Tick dummy
 scoreboard objectives add STV.Ult.Spear.Detect minecraft.used:minecraft.flow_pottery_sherd
 
+scoreboard objectives add STV.Wizard.Detect minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add STV.Wizard.Cool dummy
+
 # 役職共通のウルトのエネルギー
 scoreboard objectives add STV.Common.Ult.Energy dummy
 

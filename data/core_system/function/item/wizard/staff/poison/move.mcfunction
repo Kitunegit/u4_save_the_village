@@ -8,5 +8,7 @@
   execute unless block ^ ^ ^1 air run kill @s
  
  # ダメージ
-  execute at @s positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#core_system:raid,dx=0,dy=0,dz=0] run damage @s 3 magic by @p[tag=Job.Wizard]
+  execute at @s positioned ~-0.5 ~-0.5 ~-0.5 unless entity @e[type=#core_system:raid,dx=0,dy=0,dz=0] run return 0
+  function core_system:item/wizard/staff/poison/hit
+  execute at @s positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#core_system:raid,dx=0,dy=0,dz=0] run function core_system:item/wizard/damage/apply with storage stv: wizard
   execute at @s positioned ~-0.5 ~-0.5 ~-0.5 run effect give @e[type=#core_system:raid,dx=0,dy=0,dz=0] poison 5 5 true

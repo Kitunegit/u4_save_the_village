@@ -3,8 +3,7 @@
  function core_system:item/wizard/staff/fire/move
  function core_system:item/wizard/staff/fire/move
  function core_system:item/wizard/staff/fire/move
- function core_system:item/wizard/staff/fire/move
 
  # 時間でkill
  scoreboard players add @s STV.Wizard.Cool 1
- execute if score @s STV.Wizard.Cool matches 5.. run function core_system:item/wizard/staff/fire/explosion
+ execute if score @s STV.Wizard.Cool matches 7.. run function core_system:item/wizard/staff/fire/explosion

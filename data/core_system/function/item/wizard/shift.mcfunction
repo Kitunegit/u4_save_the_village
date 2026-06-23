@@ -11,3 +11,5 @@ execute if entity @s[tag=Job.Wizard.Soul.Temp] run tag @s add Job.Wizard.Soul
 tag @s remove Job.Wizard.Fire.Temp
 tag @s remove Job.Wizard.Poison.Temp
 tag @s remove Job.Wizard.Soul.Temp
+
+scoreboard players set @s Test 0

@@ -2,7 +2,7 @@ function core_system:job/reset
 item replace entity @s armor.chest with diamond_chestplate[trim={material:"minecraft:diamond",pattern:"minecraft:host"},unbreakable={},enchantments={"minecraft:protection":2,"minecraft:thorns":1}]
 item replace entity @s armor.legs with iron_leggings[trim={material:"minecraft:diamond",pattern:"minecraft:wayfinder"},unbreakable={},enchantments={"minecraft:protection":2,"minecraft:thorns":1}]
 item replace entity @s armor.feet with iron_boots[trim={material:"minecraft:diamond",pattern:"minecraft:wayfinder"},unbreakable={},enchantments={"minecraft:protection":2,"minecraft:thorns":1}]
-item replace entity @s hotbar.0 with diamond_axe[minecraft:unbreakable={},enchantments={"minecraft:sharpness":4}]
+item replace entity @s hotbar.0 with diamond_axe[minecraft:unbreakable={},enchantments={"minecraft:sharpness":4},item_model=axe]
 item replace entity @s weapon.offhand with minecraft:shield[minecraft:unbreakable={}]
 
 item replace entity @s hotbar.8 with cooked_beef 64

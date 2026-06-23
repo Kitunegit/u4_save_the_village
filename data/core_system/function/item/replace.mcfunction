@@ -5,3 +5,4 @@ execute if data entity @s {Tags:['Job.Archer']} run function core_system:item/po
 execute if data entity @s {Tags:['Job.Trident']} run function core_system:item/potion/trident
 execute if data entity @s {Tags:['Job.Chemist']} run function core_system:item/potion/chemist
 execute if data entity @s {Tags:['Job.Warrior']} run function core_system:item/potion/warrior
+execute if data entity @s {Tags:['Job.Wizard']} run function core_system:item/potion/wizard

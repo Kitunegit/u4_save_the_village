@@ -23,6 +23,9 @@ scoreboard players set @s STV.Utility.Potion.Stack 0
 scoreboard players set @s STV.Common.Ult.Energy 0
 scoreboard players set @s STV.Common.Ult.MaxEnergy 100
 
+scoreboard players set @s STV.Wizard.Cool 0
+scoreboard players set @s STV.Wizard.Magic.Damage.Multiplier 0
+
 attribute @s attack_damage modifier remove stv:base_1
 attribute @s attack_damage modifier remove stv:base_2
 attribute @s attack_damage modifier remove stv:base_3

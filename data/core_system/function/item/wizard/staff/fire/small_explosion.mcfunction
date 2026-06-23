@@ -1,4 +1,5 @@
-execute at @s positioned ~-1 ~-1 ~-1 as @e[type=#core_system:raid,dx=1,dy=1,dz=1] run damage @s 10 magic by @p[tag=Job.Wizard]
+function core_system:item/wizard/staff/fire/sml_exp_damage
+execute at @s positioned ~-1 ~-1 ~-1 as @e[type=#core_system:raid,dx=1,dy=1,dz=1] run function core_system:item/wizard/damage/apply with storage stv: wizard
 
 execute at @s run playsound minecraft:entity.firework_rocket.twinkle player @a ~ ~ ~ 0.2 1.5
 

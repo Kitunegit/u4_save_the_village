@@ -1,7 +1,7 @@
 function core_system:job/reset
 item replace entity @s armor.chest with leather_chestplate[trim={material:"minecraft:resin",pattern:"minecraft:coast"},unbreakable={},enchantments={"minecraft:protection":2},dyed_color=16733440]
 item replace entity @s armor.legs with leather_leggings[trim={material:"minecraft:diamond",pattern:"minecraft:flow"},unbreakable={},enchantments={"minecraft:protection":2}]
-item replace entity @s hotbar.0 with carrot_on_a_stick[unbreakable={},custom_name={"bold":false,"italic":false,"text":"魔法の杖"}]
+item replace entity @s hotbar.0 with carrot_on_a_stick[unbreakable={},custom_name={"bold":false,"italic":false,"text":"魔法の杖"},minecraft:item_model=staff]
 
 item replace entity @s hotbar.8 with cooked_beef 64
 

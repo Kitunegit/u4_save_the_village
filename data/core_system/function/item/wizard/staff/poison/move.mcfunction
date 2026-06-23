@@ -1,7 +1,7 @@
 
 # エフェクト
- execute at @s run particle minecraft:copper_fire_flame ~ ~ ~ 0.4 0.4 0.4 0.03 1 normal
- execute at @s run particle dust{color:[0.13,0.73,0.17],scale:2.0} ~ ~ ~ 0.1 0.1 0.1 0.03 1 normal
+ execute if score @s STV.Wizard.Cool matches 1.. at @s run particle minecraft:copper_fire_flame ~ ~ ~ 0.4 0.4 0.4 0.03 1 normal
+ execute if score @s STV.Wizard.Cool matches 1.. at @s run particle dust{color:[0.13,0.73,0.17],scale:2.0} ~ ~ ~ 0.1 0.1 0.1 0.03 1 normal
 
  # 飛ばす
   execute at @s if block ^ ^ ^1 air run tp @s ^ ^ ^1

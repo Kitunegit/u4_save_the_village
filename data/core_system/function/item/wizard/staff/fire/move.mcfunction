@@ -1,7 +1,7 @@
 
 # エフェクト
- execute at @s run particle flame ~ ~ ~ 0.4 0.4 0.4 0.03 1 normal
- execute at @s run particle dust{color:[1.0,0.2,0.2],scale:2.0} ~ ~ ~ 0.1 0.1 0.1 0.03 1 normal
+ execute if score @s STV.Wizard.Cool matches 1.. at @s run particle flame ~ ~ ~ 0.4 0.4 0.4 0.03 1 normal
+ execute if score @s STV.Wizard.Cool matches 1.. at @s run particle dust{color:[1.0,0.2,0.2],scale:2.0} ~ ~ ~ 0.1 0.1 0.1 0.03 1 normal
 
  # 飛ばす
   execute at @s if block ^ ^ ^1 air run tp @s ^ ^ ^1

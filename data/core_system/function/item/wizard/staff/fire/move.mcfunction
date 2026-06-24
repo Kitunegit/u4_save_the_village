@@ -9,6 +9,7 @@
  
  # ダメージ
   execute at @s positioned ~-0.5 ~-0.5 ~-0.5 unless entity @e[type=#core_system:raid,dx=0,dy=0,dz=0] run return 0
+  execute as @p[tag=Job.Wizard] if score @s STV.Wizard.Buff.Cool matches 1.. run scoreboard players add @s STV.Common.Ult.Energy 1
   function core_system:item/wizard/staff/fire/hit_damage
   execute at @s positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#core_system:raid,dx=0,dy=0,dz=0] run function core_system:item/wizard/damage/apply with storage stv: wizard
   execute at @s positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=#core_system:raid,dx=0,dy=0,dz=0] run function core_system:item/wizard/staff/fire/explosion

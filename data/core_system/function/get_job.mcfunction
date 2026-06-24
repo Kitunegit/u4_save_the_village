@@ -4,5 +4,6 @@ execute as @a at @s if block ~ ~-3 ~ blue_wool run function core_system:job/swor
 execute as @a at @s if block ~ ~-3 ~ yellow_wool run function core_system:job/chemist
 execute as @a at @s if block ~ ~-3 ~ black_wool run function core_system:job/warrior
 execute as @a at @s if block ~ ~-3 ~ pink_wool run function core_system:job/spear
+execute as @a at @s if block ~ ~-3 ~ cyan_wool run function core_system:job/wizard
 execute as @a[tag=!Have.Job] run function core_system:job/sword
 tag @a remove Have.Job

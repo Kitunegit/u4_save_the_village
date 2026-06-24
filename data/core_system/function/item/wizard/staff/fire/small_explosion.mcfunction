@@ -1,4 +1,5 @@
 function core_system:item/wizard/staff/fire/sml_exp_damage
+execute at @s positioned ~-1 ~-1 ~-1 if entity @e[type=#core_system:raid,dx=1,dy=1,dz=1] as @p[tag=Job.Wizard] if score @s STV.Wizard.Buff.Cool matches 1.. run scoreboard players add @s STV.Common.Ult.Energy 1
 execute at @s positioned ~-1 ~-1 ~-1 as @e[type=#core_system:raid,dx=1,dy=1,dz=1] run function core_system:item/wizard/damage/apply with storage stv: wizard
 
 execute at @s run playsound minecraft:entity.firework_rocket.twinkle player @a ~ ~ ~ 0.2 1.5

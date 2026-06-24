@@ -29,6 +29,9 @@
 # ウルト関連
  # ウルト処理
   execute as @e[type=marker,tag=STV.Chemist.Ult] run function core_system:item/ult/chemist/tick
+  execute as @e[type=marker,tag=STV.Wizard.Ult.Marker.Fire] run function core_system:item/ult/wizard/fire_tick
+  execute as @e[type=marker,tag=STV.Wizard.Ult.Marker.Soul] run function core_system:item/ult/wizard/soul_tick
+  execute as @e[type=marker,tag=STV.Wizard.Ult.Marker.Poison] run function core_system:item/ult/wizard/poison_tick
   execute as @e[type=item_display,tag=STV.Ult.Trident] run function core_system:item/ult/trident/tick
   execute as @a[tag=STV.Ult.Archer] run function core_system:item/ult/archer/tick
   execute as @e[type=marker,tag=STV.Sword.Ult] run function core_system:item/ult/sword/tick
@@ -43,6 +46,7 @@
  execute as @a[tag=Job.Sword] if score @s STV.Ult.Sword.Detect matches 1 run function core_system:item/ult/sword/start
  execute as @a[tag=Job.Warrior] if score @s STV.Ult.Warrior.Detect matches 1 run function core_system:item/ult/warrior/start
  execute as @a[tag=Job.Spear] if score @s STV.Ult.Spear.Detect matches 1 run function core_system:item/ult/spear/start
+ execute as @a[tag=Job.Wizard] if score @s STV.Ult.Wizard.Detect matches 1 run function core_system:item/ult/wizard/start
  
  # 弓兵のウルト増加検知
  execute as @a[tag=Job.Archer] if score @s STV.Archer.Shot matches 1.. run function core_system:item/ult/archer/charge

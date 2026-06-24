@@ -28,6 +28,8 @@ scoreboard objectives add STV.Wizard.Magic.Damage dummy
 scoreboard objectives add STV.Wizard.Magic.Damage.Multiplier dummy
 scoreboard objectives add STV.Wizard.Buff.Cool dummy
 scoreboard objectives add STV.Wizard.Magic.Damage.Multiplier.Base dummy
+scoreboard objectives add STV.Ult.Wizard.Cool dummy
+scoreboard objectives add STV.Ult.Wizard.Detect minecraft.used:minecraft.shelter_pottery_sherd
 
 # 役職共通のウルトのエネルギー
 scoreboard objectives add STV.Common.Ult.Energy dummy

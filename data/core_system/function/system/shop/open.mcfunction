@@ -10,3 +10,4 @@ scoreboard objectives add STV.Trigger.UltBuy trigger
  execute if data entity @s {Tags:['Job.Chemist']} run function core_system:system/shop/chemist/option
  execute if data entity @s {Tags:['Job.Archer']} run function core_system:system/shop/archer/option
  execute if data entity @s {Tags:['Job.Warrior']} run function core_system:system/shop/warrior/option
+ execute if data entity @s {Tags:['Job.Wizard']} run function core_system:system/shop/wizard/option

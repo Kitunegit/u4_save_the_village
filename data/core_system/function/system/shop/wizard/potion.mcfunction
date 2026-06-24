@@ -1,12 +1,27 @@
- function core_system:item/wizard/shift
+# 基礎能力強化をクリックしたときに実行
+ 
+# 購入上限検知
+ execute if score @s STV.Utility.Potion.Stack matches 5.. run tellraw @s {"text":"購入上限に達しています。"}
+ execute if score @s STV.Utility.Potion.Stack matches 5.. at @s run playsound minecraft:entity.villager.no player @s ~ ~ ~ 1 1
+ execute if score @s STV.Utility.Potion.Stack matches 5.. run return 0
+# 所持エメラルド取得
+ execute store result score @s STV.Utility.Emerald_Count run clear @s emerald 0
+ execute if score @s STV.Utility.Emerald_Count matches ..29 run tellraw @s {"text":"エメラルドが不足しています。"}
+ execute if score @s STV.Utility.Emerald_Count matches ..29 at @s run playsound minecraft:entity.villager.no player @s ~ ~ ~ 1 1
+ execute if score @s STV.Utility.Emerald_Count matches ..29 run return 0
+
+# 購入処理
+ clear @s emerald 30
+
+ clear @s apple
+ scoreboard players add @s STV.Utility.Potion.Stack 1
  execute if score @s STV.Utility.Potion.Stack matches 1 run give @s apple[use_cooldown={seconds:10,cooldown_group:"food"},use_remainder={id:"minecraft:gray_stained_glass_pane",count:1},lore=[{"bold":false,"color":"gray","italic":false,"text":"食べると自身の属性が切り替わり、魔力が増強する禁断の果実。"},{"bold":false,"color":"dark_purple","italic":false,"text":"効果:"},{"bold":false,"color":"blue","italic":false,"text":"属性変更"},{"bold":false,"color":"blue","italic":false,"text":"魔法攻撃力 +20%"},{"bold":false,"color":"dark_purple","italic":false,"text":"時間:"},{"bold":false,"color":"blue","italic":false,"text":"CT:10s"},{"bold":false,"color":"blue","italic":false,"text":"継続:3s"}],tooltip_display={hide_tooltip:false,hidden_components:["potion_contents"]},custom_name={"bold":false,"italic":false,"text":"禁断の果実"},food={nutrition:0,saturation:0,can_always_eat:true},consumable={consume_seconds:0.8},item_model=bad_apple]
  execute if score @s STV.Utility.Potion.Stack matches 2 run give @s apple[use_cooldown={seconds:10,cooldown_group:"food"},use_remainder={id:"minecraft:gray_stained_glass_pane",count:1},lore=[{"bold":false,"color":"gray","italic":false,"text":"食べると自身の属性が切り替わり、魔力が増強する禁断の果実。"},{"bold":false,"color":"dark_purple","italic":false,"text":"効果:"},{"bold":false,"color":"blue","italic":false,"text":"属性変更"},{"bold":false,"color":"blue","italic":false,"text":"魔法攻撃力 +20%"},{"bold":false,"color":"dark_purple","italic":false,"text":"時間:"},{"bold":false,"color":"blue","italic":false,"text":"CT:10s"},{"bold":false,"color":"blue","italic":false,"text":"継続:4s"}],tooltip_display={hide_tooltip:false,hidden_components:["potion_contents"]},custom_name={"bold":false,"italic":false,"text":"禁断の果実"},food={nutrition:0,saturation:0,can_always_eat:true},consumable={consume_seconds:0.8},item_model=bad_apple]
  execute if score @s STV.Utility.Potion.Stack matches 3 run give @s apple[use_cooldown={seconds:8,cooldown_group:"food"},use_remainder={id:"minecraft:gray_stained_glass_pane",count:1},lore=[{"bold":false,"color":"gray","italic":false,"text":"食べると自身の属性が切り替わり、魔力が増強する禁断の果実。"},{"bold":false,"color":"dark_purple","italic":false,"text":"効果:"},{"bold":false,"color":"blue","italic":false,"text":"属性変更"},{"bold":false,"color":"blue","italic":false,"text":"魔法攻撃力 +20%"},{"bold":false,"color":"dark_purple","italic":false,"text":"時間:"},{"bold":false,"color":"blue","italic":false,"text":"CT:8s"},{"bold":false,"color":"blue","italic":false,"text":"継続:4s"}],tooltip_display={hide_tooltip:false,hidden_components:["potion_contents"]},custom_name={"bold":false,"italic":false,"text":"禁断の果実"},food={nutrition:0,saturation:0,can_always_eat:true},consumable={consume_seconds:0.8},item_model=bad_apple]
  execute if score @s STV.Utility.Potion.Stack matches 4 run give @s apple[use_cooldown={seconds:8,cooldown_group:"food"},use_remainder={id:"minecraft:gray_stained_glass_pane",count:1},lore=[{"bold":false,"color":"gray","italic":false,"text":"食べると自身の属性が切り替わり、魔力が増強する禁断の果実。"},{"bold":false,"color":"dark_purple","italic":false,"text":"効果:"},{"bold":false,"color":"blue","italic":false,"text":"属性変更"},{"bold":false,"color":"blue","italic":false,"text":"魔法攻撃力 +30%"},{"bold":false,"color":"dark_purple","italic":false,"text":"時間:"},{"bold":false,"color":"blue","italic":false,"text":"CT:8s"},{"bold":false,"color":"blue","italic":false,"text":"継続:4s"}],tooltip_display={hide_tooltip:false,hidden_components:["potion_contents"]},custom_name={"bold":false,"italic":false,"text":"禁断の果実"},food={nutrition:0,saturation:0,can_always_eat:true},consumable={consume_seconds:0.8},item_model=bad_apple]
  execute if score @s STV.Utility.Potion.Stack matches 5 run give @s apple[use_cooldown={seconds:8,cooldown_group:"food"},use_remainder={id:"minecraft:gray_stained_glass_pane",count:1},lore=[{"bold":false,"color":"gray","italic":false,"text":"食べると自身の属性が切り替わり、魔力が増強する禁断の果実。"},{"bold":false,"color":"dark_purple","italic":false,"text":"効果:"},{"bold":false,"color":"blue","italic":false,"text":"属性変更"},{"bold":false,"color":"blue","italic":false,"text":"魔法攻撃力 +40%"},{"bold":false,"color":"dark_purple","italic":false,"text":"時間:"},{"bold":false,"color":"blue","italic":false,"text":"CT:8s"},{"bold":false,"color":"blue","italic":false,"text":"継続:4s"}],tooltip_display={hide_tooltip:false,hidden_components:["potion_contents"]},custom_name={"bold":false,"italic":false,"text":"禁断の果実"},food={nutrition:0,saturation:0,can_always_eat:true},consumable={consume_seconds:0.8},item_model=bad_apple]
-
- execute if score @s STV.Utility.Potion.Stack matches 1 run function core_system:item/wizard/effect/1
- execute if score @s STV.Utility.Potion.Stack matches 2 run function core_system:item/wizard/effect/2
- execute if score @s STV.Utility.Potion.Stack matches 3 run function core_system:item/wizard/effect/3
- execute if score @s STV.Utility.Potion.Stack matches 4 run function core_system:item/wizard/effect/4
- execute if score @s STV.Utility.Potion.Stack matches 5 run function core_system:item/wizard/effect/5
+ execute at @s run playsound minecraft:entity.zombie_villager.cure player @s ~ ~ ~ 1 2
+ 
+ execute if score @s STV.Utility.Potion.Stack matches 1 run tellraw @s {"text":"特殊果実を購入しました!"}
+ execute if score @s STV.Utility.Potion.Stack matches 1 run tag @s add Has.Potion
+ execute if score @s STV.Utility.Potion.Stack matches 2.. run tellraw @s {"text":"特殊果実を強化しました!"}

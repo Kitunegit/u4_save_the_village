@@ -19,6 +19,7 @@ scoreboard players set @s STV.Wizard.Cool 0
 
 # 魔法攻撃力をセット
 scoreboard players set @s STV.Wizard.Magic.Damage.Multiplier 100
+scoreboard players set @s STV.Wizard.Magic.Damage.Multiplier.Base 0
 
 
 #item replace entity @s armor.chest with leather_chestplate[trim={material:"minecraft:resin",pattern:"minecraft:coast"},unbreakable={},enchantments={"minecraft:protection":2},dyed_color=16733440]

@@ -26,6 +26,8 @@ scoreboard objectives add STV.Wizard.Detect minecraft.used:minecraft.carrot_on_a
 scoreboard objectives add STV.Wizard.Cool dummy
 scoreboard objectives add STV.Wizard.Magic.Damage dummy
 scoreboard objectives add STV.Wizard.Magic.Damage.Multiplier dummy
+scoreboard objectives add STV.Wizard.Buff.Cool dummy
+scoreboard objectives add STV.Wizard.Magic.Damage.Multiplier.Base dummy
 
 # 役職共通のウルトのエネルギー
 scoreboard objectives add STV.Common.Ult.Energy dummy

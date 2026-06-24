@@ -1,4 +1,3 @@
-$say $(damage)damage, $(multiplier)multiplier
 # 基礎ダメージを取得
 $scoreboard players set $Damage STV.Wizard.Magic.Damage $(damage)
 # ダメージ倍率と掛け算
